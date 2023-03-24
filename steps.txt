@@ -1,0 +1,45 @@
+=====================================
+Simple Codeigniter 4 CRUD Application
+=====================================
+
+Install Composer
+----------------
+C:\xampp\php\php.exe
+
+Server Requirements:
+-------------------------------------
+PHP version 7.2 or newer is required, with the *intl* extention and *mbstring* extention installed.
+
+C:\xampp\php\php.ini
+
+Currently supported databases are:
+-------------------------------------
+MySQL (5.1+) via the MySQLi driver
+https://codeigniter4.github.io/userguide/intro/requirements.html
+
+-------------------------------------
+Installation
+-------------------------------------
+1) You need to install Composer first.
+2) Open your working folder, if you are using xampp you need to open htdocs directory.
+3) Now open CMD and go to htdocs folder, and run the composer command given below.
+composer create-project codeigniter4/appstarter codeigniter4_crud
+4) To access the project in browser, we need to open codeigniter4_crud in CMD and run the command given below.
+php spark serve
+
+If, you see a welcome screen it means, you have successfully installed Codeigniter 4 project.
+
+5) Create database and table
+6) Create a controller called Users inside the following directory.
+7) Now inside "Users" controler, we'll create a method called "index". This method will load our first landing page, which will hold the lisiting of users in a tabular form.
+8) Open routes.php and create a "Get" route for users listing.
+$routes->get('/users', 'Users::index');
+
+9) We will use bootstrap4 for our project, you need to download bootstrap files.
+https://github.com/mohitsingh2006/ci4_assets
+10) Create a folder name "assets" inside public directory and paste the "css" and "js" folder there.
+11) Now, we will create a view called "list.php" inside sub folder called "users" in view directory, dorectory given below.
+app\views\users\list.php
+12) Let's load our "list.php" view in "index" method of Users controler class and create some basic structure for our CRUD App in our "list.php" view.
+
+ 
